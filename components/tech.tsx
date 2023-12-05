@@ -39,6 +39,6 @@ export const DevTechnologies: Record<string, TechStackItem> = {
   shadcn: {name: "ShadCN", icon: <CircleIcon className="mr-1 h-3 w-3 text-slate-300" />},
   auth0: {name: "Auth0", icon: <CircleIcon className="mr-1 h-3 w-3 text-lime-400" />},
   openzeppelin: {name: "OpenZeppelin", icon: <CircleIcon className="mr-1 h-3 w-3 text-slate-300" />},
-  alchemy: {name: "MongoDB", icon: <CircleIcon className="mr-1 h-3 w-3 text-blue-500" />},
+  alchemy: {name: "Alchemy", icon: <CircleIcon className="mr-1 h-3 w-3 text-blue-500" />},
   qiskit: {name: "IBM QISKit", icon: <CircleIcon className="mr-1 h-3 w-3 text-amber-600" />},
 }

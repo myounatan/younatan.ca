@@ -62,7 +62,7 @@ export default function IndexPage() {
               description="Decentralized, AI-enabled social media marketing campaign tool. Live on Base L2 testnet."
               demoLink="https://campaign-x-git-backdropbuild-campaign-x.vercel.app/"
               demoText="Live Demo"
-              image="/campaignx.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.materialui,DevTechnologies.aws,DevTechnologies.vercel ]}
+              image="/campaignx.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.materialui,DevTechnologies.aws,DevTechnologies.vercel,CodingLanguages.prisma,DevTechnologies.postgresql ]}
             />
             <GitHubCard
               name="TwitterCampaign - EthGlobal Paris 2023 Finalist"
