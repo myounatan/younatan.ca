@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "younatan.io",
+  name: "younatan.ca",
   description:
     "Matthew Younatan Portfolio.",
   mainNav: [
