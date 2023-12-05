@@ -1,14 +1,8 @@
-import Link from "next/link"
 import { Metadata } from 'next'; // if using TypeScript
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import { MailIcon } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { AboutMe } from "@/components/aboute-me"
 import ContactButton from "@/components/contact-button"
 import { GitHubCard } from "@/components/github-card"
-import { CircleIcon } from "@radix-ui/react-icons"
 import { CodingLanguages, DevTechnologies } from "@/components/tech"
 
 export const metadata: Metadata = {
@@ -19,14 +13,14 @@ export const metadata: Metadata = {
     siteName: 'younatan.ca',
     images: [
       {
-        url: 'https://www.younatan.ca/base-westie.png',
+        url: 'https://www.younatan.ca/matthew-opengraph-1.png',
         width: 800,
-        height: 600,
+        height: 533,
       },
       {
-        url: 'https://www.younatan.ca/base-westie.png',
-        width: 1800,
-        height: 1600,
+        url: 'https://www.younatan.ca/matthew-opengraph-1.png',
+        width: 800,
+        height: 533,
         alt: 'Matthew Younatan',
       },
     ],
