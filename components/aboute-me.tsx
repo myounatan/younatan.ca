@@ -16,7 +16,7 @@ import { useEffect, useState } from "react";
 const isWindowContext = typeof window !== "undefined";
 
 export function AboutMe() {
-  const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
+  const [currentMonth, setCurrentMonth] = useState(new Date().toLocaleString('default', { month: 'long' }));
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   const [isMobile, setIsMobile] = useState(isWindowContext ? /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent) : false);
 

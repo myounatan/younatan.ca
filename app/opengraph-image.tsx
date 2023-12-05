@@ -3,7 +3,7 @@ import { ImageResponse } from "next/server"
  
 // Route segment config
 export const runtime = 'edge'
- 
+
 // Image metadata
 export const alt = 'About Acme'
 export const size = {
@@ -13,12 +13,30 @@ export const size = {
 
 export const contentType = 'image/png'
 
+export const metadata = {
+  metadataBase: new URL('http://localhost:3000'),
+  title: 'Title webtsite',
+  description: 'this is the desciption',
+  openGraph: {
+    title: 'Title webtsite',
+    description: 'this is the desciption',
+    image: 'matthew.png'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@eMartiiin94',
+    title: 'Title webtsite',
+    description: 'this is the desciption',
+    image: 'url/image.png'
+  }
+}
+
 // Image generation
 export default async function Image() {
   // Font
-  const interSemiBold = fetch(
-    new URL('./Inter-SemiBold.ttf', import.meta.url)
-  ).then((res) => res.arrayBuffer())
+  // const interSemiBold = fetch(
+  //   new URL('./Inter-SemiBold.ttf', import.meta.url)
+  // ).then((res) => res.arrayBuffer())
  
   return new ImageResponse(
     (
@@ -43,12 +61,12 @@ export default async function Image() {
       // size config to also set the ImageResponse's width and height.
       ...size,
       fonts: [
-        {
-          name: 'Inter',
-          data: await interSemiBold,
-          style: 'normal',
-          weight: 400,
-        },
+        // {
+        //   name: 'Inter',
+        //   data: await interSemiBold,
+        //   style: 'normal',
+        //   weight: 400,
+        // },
       ],
     }
   )
