@@ -44,7 +44,7 @@ export default function IndexPage() {
 
       <ContactButton />
 
-      <div className="md:px-[15%] lg:px-[10%] xl:px-[5%] space-y-10">
+      <div className="md:px-[5%] lg:px-[10%] xl:px-[5%] space-y-10">
         <div>
           <h2 className="text-3xl font-semibold mb-5 text-center">
             About
@@ -56,7 +56,7 @@ export default function IndexPage() {
           <h2 className="text-3xl font-semibold mb-5 text-center">
             Projects
           </h2>
-          <div className="w-full grid col-span-4 grid-cols-3 gap-4">
+          <div className="w-full grid col-span-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             <GitHubCard
               name="CampaignX"
               description="Decentralized, AI-enabled social media marketing campaign tool. Live on Base L2 testnet."
