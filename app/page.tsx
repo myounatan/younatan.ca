@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Metadata } from 'next'; // if using TypeScript
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
@@ -9,6 +10,30 @@ import ContactButton from "@/components/contact-button"
 import { GitHubCard } from "@/components/github-card"
 import { CircleIcon } from "@radix-ui/react-icons"
 import { CodingLanguages, DevTechnologies } from "@/components/tech"
+
+export const metadata: Metadata = {
+  openGraph: {
+    title: "Matthew Younatan's Portfolio",
+    description: "Software Engineer with 3+ years experience currently working as a Blockchain Engineer.",
+    url: 'https://www.younatan.ca/',
+    siteName: 'younatan.ca',
+    images: [
+      {
+        url: 'https://www.younatan.ca/base-westie.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.younatan.ca/base-westie.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Matthew Younatan',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 export default function IndexPage() {
   return (
