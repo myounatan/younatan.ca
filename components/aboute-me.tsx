@@ -13,10 +13,12 @@ import { CodingLanguages, DevTechnologies } from "./tech";
 import { SocialsNav } from "./socials-nav";
 import { useEffect, useState } from "react";
 
+const isWindowContext = typeof window !== "undefined";
+
 export function AboutMe() {
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
-  const [isMobile, setIsMobile] = useState(/iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent));
+  const [isMobile, setIsMobile] = useState(isWindowContext ? /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent) : false);
 
   const languages = Object.values(CodingLanguages);
   const technologies = Object.values(DevTechnologies);
