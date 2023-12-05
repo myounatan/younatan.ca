@@ -11,7 +11,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    websiteSource: "https://github.com/myounatan/younatan.io",
+    websiteSource: "https://github.com/myounatan/younatan.ca",
     linkedin: "https://www.linkedin.com/in/matthewyounatan/",
     twitter: "https://twitter.com/matyounatan",
     github: "https://github.com/myounatan",
