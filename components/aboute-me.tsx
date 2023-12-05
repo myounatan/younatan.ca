@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { CircleIcon } from "lucide-react"
 import { TechStackList } from "./tech-stack-list";
 import { CodingLanguages, DevTechnologies } from "./tech";
+import { SocialsNav } from "./socials-nav";
 
 export function AboutMe() {
 
@@ -42,6 +43,7 @@ export function AboutMe() {
                 <br />
               </span>
             ))}
+            <SocialsNav />
           </AccordionContent>
         </AccordionItem>
       </Accordion>
