@@ -11,24 +11,15 @@ import { CircleIcon } from "lucide-react"
 import { TechStackList } from "./tech-stack-list";
 import { CodingLanguages, DevTechnologies } from "./tech";
 import { SocialsNav } from "./socials-nav";
+import { useEffect, useState } from "react";
 
 export function AboutMe() {
-
-  const now = new Date();
-  const month = now.toLocaleString('default', { month: 'long' });
-  const year = now.getFullYear();
+  const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [isMobile, setIsMobile] = useState(/iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent));
 
   const languages = Object.values(CodingLanguages);
   const technologies = Object.values(DevTechnologies);
-
-  // detect current device
-  const isMobile = function() {
-    try {
-      return /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
-    } catch (e) {
-      return false;
-    }
-  }()
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-4 space-y-4 xl:space-y-0 xl:space-x-4">
@@ -66,7 +57,7 @@ export function AboutMe() {
                 <TechStackList techStack={technologies} />
               </div>
               <div className="flex space-x-4 text-xs text-muted-foreground pt-5">
-                <div>Updated {month} {year}</div>
+                <div>Updated {currentMonth} {currentYear}</div>
               </div>
             </div>
           </AccordionContent>

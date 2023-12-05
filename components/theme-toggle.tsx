@@ -9,7 +9,9 @@ import { Button } from "@/components/ui/button"
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme()
 
-  setTheme("dark")
+  React.useEffect(() => {
+    setTheme("dark")
+  }, [])
 
   return (
     <></>
