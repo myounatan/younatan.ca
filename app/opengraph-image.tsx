@@ -1,73 +1,27 @@
-import { ImageResponse } from "next/server"
-
+import { Metadata } from 'next'; // if using TypeScript
  
-// Route segment config
-export const runtime = 'edge'
-
-// Image metadata
-export const alt = 'About Acme'
-export const size = {
-  width: 1200,
-  height: 630,
-}
-
-export const contentType = 'image/png'
-
-export const metadata = {
-  metadataBase: new URL('http://localhost:3000'),
-  title: 'Title webtsite',
-  description: 'this is the desciption',
+export const metadata: Metadata = {
   openGraph: {
-    title: 'Title webtsite',
-    description: 'this is the desciption',
-    image: 'matthew.png'
+    title: "Matthew Younatan's Portfolio",
+    description: "Software Engineer with 3+ years experience currently working as a Blockchain Engineer.",
+    url: 'https://www.younatan.ca/',
+    siteName: 'younatan.ca',
+    images: [
+      {
+        url: 'https://www.younatan.ca/base-westie.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.younatan.ca/base-westie.png',
+        width: 1800,
+        height: 1600,
+        alt: 'Matthew Younatan',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@eMartiiin94',
-    title: 'Title webtsite',
-    description: 'this is the desciption',
-    image: 'url/image.png'
-  }
-}
-
-// Image generation
-export default async function Image() {
-  // Font
-  // const interSemiBold = fetch(
-  //   new URL('./Inter-SemiBold.ttf', import.meta.url)
-  // ).then((res) => res.arrayBuffer())
+};
  
-  return new ImageResponse(
-    (
-      // ImageResponse JSX element
-      <div
-        style={{
-          fontSize: 128,
-          background: 'white',
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        Matthew Younatan
-      </div>
-    ),
-    // ImageResponse options
-    {
-      // For convenience, we can re-use the exported opengraph-image
-      // size config to also set the ImageResponse's width and height.
-      ...size,
-      fonts: [
-        // {
-        //   name: 'Inter',
-        //   data: await interSemiBold,
-        //   style: 'normal',
-        //   weight: 400,
-        // },
-      ],
-    }
-  )
-}
+export default function Page() {}
