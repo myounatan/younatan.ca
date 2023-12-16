@@ -19,7 +19,7 @@ export const siteConfig = {
   about: {
     email: "matyounatan@gmail.com",
     bio: [
-      "Software Engineer with 3+ years experience currently working as a Blockchain Engineer. Coding since the age of 12, I'm a jack-of-all-trades programmer.",
+      "Software Engineer with years experience currently working as a Blockchain Engineer. Coding since the age of 12, I'm a jack-of-all-trades programmer.",
       //"Received my BSc in Computer Science from Wilfrid Laurier University in Waterloo, ON, where I studied system programming, quantum computing and game development.",
       "I'm experienced in developing software in fast-paced web3 startup-environments and passionate about reshaping the digital landscape; driving the convergence of decentralized web3 technologies with traditional web2 industries.",
       "Let's chat! Shoot me an email by clicking the pretty button above :)"

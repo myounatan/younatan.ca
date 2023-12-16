@@ -4,11 +4,12 @@ import { AboutMe } from "@/components/aboute-me"
 import ContactButton from "@/components/contact-button"
 import { GitHubCard } from "@/components/github-card"
 import { CodingLanguages, DevTechnologies } from "@/components/tech"
+import { getYearsOfExperience } from '@/lib/text';
 
 export const metadata: Metadata = {
   openGraph: {
     title: "Matthew Younatan's Portfolio",
-    description: "Software Engineer with 3+ years experience currently working as a Blockchain Engineer.",
+    description: `Software Engineer with ${getYearsOfExperience()} years of experience currently working as a Blockchain Engineer.`,
     url: 'https://www.younatan.ca/',
     siteName: 'younatan.ca',
     images: [

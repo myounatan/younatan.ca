@@ -12,6 +12,7 @@ import { TechStackList } from "./tech-stack-list";
 import { CodingLanguages, DevTechnologies } from "./tech";
 import { SocialsNav } from "./socials-nav";
 import { useEffect, useState } from "react";
+import { getYearsOfExperience } from "@/lib/text";
 
 const isWindowContext = typeof window !== "undefined";
 
@@ -31,7 +32,7 @@ export function AboutMe() {
           <AccordionContent className="text-muted-foreground">
             {siteConfig.about.bio.map((paragraph, index) => (
               <span key={index}>
-                {paragraph}
+                {paragraph.replace('years', `${getYearsOfExperience()} years`)}
                 <br />
                 <br />
               </span>
