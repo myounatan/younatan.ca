@@ -3,7 +3,7 @@ import { Metadata } from 'next'; // if using TypeScript
 import { AboutMe } from "@/components/aboute-me"
 import ContactButton from "@/components/contact-button"
 import { GitHubCard } from "@/components/github-card"
-import { CodingLanguages, DevTechnologies } from "@/components/tech"
+import { CodingLanguages, DevTechnologies, FieldTopics } from "@/components/tech"
 import { getYearsOfExperience } from '@/lib/text';
 
 export const metadata: Metadata = {
@@ -82,7 +82,7 @@ export default function IndexPage() {
               description="Decentralized, AI-enabled social media marketing campaign tool. Live on Base L2 testnet."
               demoLink="https://campaign-x-git-backdropbuild-campaign-x.vercel.app/"
               demoText="Live Demo"
-              image="/campaignx.png" techStack={[ CodingLanguages.tailwind, CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.shadcn,DevTechnologies.aws,DevTechnologies.vercel,CodingLanguages.prisma,DevTechnologies.postgresql ]}
+              image="/campaignx.png" techStack={[ CodingLanguages.tailwind, CodingLanguages.solidity, CodingLanguages.typescript, CodingLanguages.prisma,DevTechnologies.postgresql, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.shadcn,DevTechnologies.aws,DevTechnologies.vercel, FieldTopics.blockchain, FieldTopics.webdev, FieldTopics.cloud ]}
             />
             <GitHubCard
               name="TwitterCampaign - EthGlobal Paris 2023 Finalist"
@@ -90,20 +90,20 @@ export default function IndexPage() {
               repoName="twitter-campaign"
               demoLink="https://ethglobal.com/showcase/twittercampaign-wv9we"
               demoText="View Showcase"
-              image="/twitter-campaign.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, CodingLanguages.graphql, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.materialui ]}
+              image="/twitter-campaign.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, CodingLanguages.graphql, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.materialui, FieldTopics.blockchain, FieldTopics.webdev ]}
             />
             <GitHubCard
               name="Roblox First-Person Shooter Game"
               description="Fully-featured FPS game written entirely in Lua, spanning 80,000+ lines of code, achieving over 200,000+ unique plays."
               demoLink="https://www.roblox.com/games/6325436182/RETROSCAPE"
               demoText="Play Game"
-              image="/retroscape.png" techStack={[ CodingLanguages.lua, DevTechnologies.roblox ]}
+              image="/retroscape.png" techStack={[ CodingLanguages.lua, DevTechnologies.roblox, FieldTopics.gamedev ]}
             />
             <GitHubCard
               name="Mitchell F Chan's Beggars Belief"
               description="Smart contracts for world-renowned NFT artist Mitchell F Chan's &quot;Beggars Belief&quot; 1/1 collection."
               repoName="beggars-belief"
-              image="/beggars-belief.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin ]}
+              image="/beggars-belief.png" techStack={[ CodingLanguages.solidity, CodingLanguages.typescript, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, FieldTopics.blockchain, FieldTopics.nfts ]}
             />
             <GitHubCard
               name="Quantum Computing Research Paper"
@@ -111,7 +111,7 @@ export default function IndexPage() {
               repoName="tt-lite"
               demoLink="https://arxiv.org/abs/1912.12599"
               demoText="View Paper"
-              image="/laurier-sign-banner.png" techStack={[ CodingLanguages.python, DevTechnologies.qiskit ]}
+              image="/laurier-sign-banner.png" techStack={[ CodingLanguages.python, DevTechnologies.qiskit, FieldTopics.quantum ]}
             />
           </div>
         </div>

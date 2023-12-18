@@ -9,7 +9,7 @@ import {
 import { siteConfig } from "@/config/site";
 import { CircleIcon } from "lucide-react"
 import { TechStackList } from "./tech-stack-list";
-import { CodingLanguages, DevTechnologies } from "./tech";
+import { CodingLanguages, DevTechnologies, FieldTopics } from "./tech";
 import { SocialsNav } from "./socials-nav";
 import { useEffect, useState } from "react";
 import { getYearsOfExperience } from "@/lib/text";
@@ -23,6 +23,7 @@ export function AboutMe() {
 
   const languages = Object.values(CodingLanguages);
   const technologies = Object.values(DevTechnologies);
+  const topics = Object.values(FieldTopics);
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-4 space-y-4 xl:space-y-0 xl:space-x-4">
@@ -58,6 +59,12 @@ export function AboutMe() {
                   Technologies
                 </p>
                 <TechStackList techStack={technologies} />
+              </div>
+              <div className="grid gap-2">
+                <p className="text-muted-foreground border-b">
+                  Topics
+                </p>
+                <TechStackList techStack={topics} />
               </div>
               <div className="flex space-x-4 text-xs text-muted-foreground pt-5">
                 <div>Updated {currentMonth} {currentYear}</div>
