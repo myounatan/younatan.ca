@@ -2,10 +2,10 @@ import { TechStackItem } from "@/types/tech-stack";
 import { CircleIcon } from "lucide-react";
 
 export const CodingLanguages: Record<string, TechStackItem> = {
+  python: {name: "Python", icon: <CircleIcon className="mr-1 h-3 w-3 text-emerald-600" />},
   solidity: {name: "Solidity", icon: <CircleIcon className="mr-1 h-3 w-3 text-slate-300" />},
   typescript: {name: "TypeScript", icon: <CircleIcon className="mr-1 h-3 w-3 text-sky-400" />},
   javascript: {name: "JavaScript", icon: <CircleIcon className="mr-1 h-3 w-3 text-yellow-400" />},
-  python: {name: "Python", icon: <CircleIcon className="mr-1 h-3 w-3 text-emerald-600" />},
   lua: {name: "Lua", icon: <CircleIcon className="mr-1 h-3 w-3 text-blue-500" />},
   cpp: {name: "C/C++", icon: <CircleIcon className="mr-1 h-3 w-3 text-stone-500" />},
   tailwind: {name: "TailwindCSS", icon: <CircleIcon className="mr-1 h-3 w-3 text-violet-500" />},
@@ -18,6 +18,7 @@ export const CodingLanguages: Record<string, TechStackItem> = {
 export const DevTechnologies: Record<string, TechStackItem> = {
   aws: {name: "AWS (EC2, RDS, S3)", icon: <CircleIcon className="mr-1 h-3 w-3 text-amber-600" />},
   gcp: {name: "GCP (Cloud Run, App Engine)", icon: <CircleIcon className="mr-1 h-3 w-3 text-sky-400" />},
+  flask: {name: "Flask", icon: <CircleIcon className="mr-1 h-3 w-3 text-indigo-300" />},
   ethereum: {name: "Ethereum", icon: <CircleIcon className="mr-1 h-3 w-3 text-slate-300" />},
   mongodb: {name: "MongoDB", icon: <CircleIcon className="mr-1 h-3 w-3 text-blue-500" />},
   postgresql: {name: "PostgreSQL", icon: <CircleIcon className="mr-1 h-3 w-3 text-orange-600" />},
