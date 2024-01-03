@@ -80,8 +80,8 @@ export default function IndexPage() {
             <GitHubCard
               name="CampaignX"
               description="Decentralized, AI-enabled social media marketing campaign tool. Live on Base L2 testnet."
-              demoLink="https://campaign-x-git-backdropbuild-campaign-x.vercel.app/"
-              demoText="Live Demo"
+              demoLink="https://www.youtube.com/watch?v=xrZRoFvAW6Y" //"https://campaign-x-git-backdropbuild-campaign-x.vercel.app/"
+              demoText="Demo Video"
               image="/campaignx.png" techStack={[ CodingLanguages.tailwind, CodingLanguages.solidity, CodingLanguages.typescript, CodingLanguages.prisma,DevTechnologies.postgresql, DevTechnologies.hardhat, DevTechnologies.ethereum, DevTechnologies.openzeppelin, DevTechnologies.alchemy, DevTechnologies.web3auth,DevTechnologies.auth0, DevTechnologies.accountabstraction,DevTechnologies.openai,DevTechnologies.nextjs,DevTechnologies.react,DevTechnologies.shadcn,DevTechnologies.aws,DevTechnologies.vercel, FieldTopics.blockchain, FieldTopics.webdev, FieldTopics.cloud ]}
             />
             <GitHubCard
