@@ -7,6 +7,7 @@ export const CodingLanguages: Record<string, TechStackItem> = {
   typescript: {name: "TypeScript", icon: <CircleIcon className="mr-1 h-3 w-3 text-sky-400" />},
   javascript: {name: "JavaScript", icon: <CircleIcon className="mr-1 h-3 w-3 text-yellow-400" />},
   lua: {name: "Lua", icon: <CircleIcon className="mr-1 h-3 w-3 text-blue-500" />},
+  golang: {name: "Go (Golang)", icon: <CircleIcon className="mr-1 h-3 w-3 text-teal-500" />},
   cpp: {name: "C/C++", icon: <CircleIcon className="mr-1 h-3 w-3 text-stone-500" />},
   tailwind: {name: "TailwindCSS", icon: <CircleIcon className="mr-1 h-3 w-3 text-violet-500" />},
   html: {name: "HTML5", icon: <CircleIcon className="mr-1 h-3 w-3 text-gray-500" />},
@@ -42,6 +43,7 @@ export const DevTechnologies: Record<string, TechStackItem> = {
   openzeppelin: {name: "OpenZeppelin", icon: <SquareIcon className="mr-1 h-3 w-3 text-slate-300" />},
   alchemy: {name: "Alchemy", icon: <SquareIcon className="mr-1 h-3 w-3 text-blue-500" />},
   qiskit: {name: "IBM QISKit", icon: <SquareIcon className="mr-1 h-3 w-3 text-amber-600" />},
+  swagger: {name: "NextJS", icon: <SquareIcon className="mr-1 h-3 w-3 text-emerald-400" />},
 }
 
 export const FieldTopics: Record<string, TechStackItem> = {
